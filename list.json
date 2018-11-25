@@ -3,7 +3,7 @@
       "list_of_audios":{
          "type":"object",
          "title":"List",
-         "$id":"https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/list.json",
+         "id":"https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/list.json",
          "default":null,
          "required":[
             "id",
