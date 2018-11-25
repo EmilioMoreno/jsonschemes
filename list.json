@@ -40,8 +40,8 @@
                "$id":"#/properties/username",
                "type":"string",
                "title":"The Username Schema",
-               "default":"",
-               "pattern":"^(*)$"
+               "default":""
+              
             },
             "title":{
                "$id":"#/properties/title",
@@ -54,11 +54,8 @@
                "$id":"#/properties/description",
                "type":"string",
                "title":"The Description Schema",
-               "default":"",
-               "examples":[
-                  ""
-               ],
-               "pattern":"^(*)$"
+               "default":""
+   
             },
             "imgfile":{
                "$id":"#/properties/imgfile",
@@ -96,7 +93,7 @@
                "examples":[
                   "0"
                ],
-               "pattern":"^(.*)$"
+               "pattern":"^([0-9]+)$"
             },
             "collaborative":{
                "$id":"#/properties/collaborative",
@@ -106,7 +103,7 @@
                "examples":[
                   "0"
                ],
-               "pattern":"^(.*)$"
+               "pattern":"^([0-9]+)$"
             },
             "commentpolicy":{
                "$id":"#/properties/commentpolicy",
@@ -116,7 +113,7 @@
                "examples":[
                   "1"
                ],
-               "pattern":"^(.*)$"
+               "pattern":"^([0-9]+)$"
             },
             "followed":{
                "$id":"#/properties/followed",
@@ -135,7 +132,7 @@
                "examples":[
                   "1"
                ],
-               "pattern":"^(.*)$"
+               "pattern":"^([0-9]+)$"
             },
             "numaudios":{
                "$id":"#/properties/numaudios",
@@ -145,7 +142,7 @@
                "examples":[
                   "23"
                ],
-               "pattern":"^(.*)$"
+               "pattern":"^([0-9]+)$"
             }
          }
       }
