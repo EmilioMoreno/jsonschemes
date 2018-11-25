@@ -27,15 +27,15 @@
                "type":"string",
                "title":"The Id Schema",
                "default":"",
-               "pattern":"alejop"
+               "pattern":"^([0-9]+)$"
             },
             "user":{
                "$id":"#/properties/user",
                "type":"string",
                "title":"The User Schema",
                "default":"",
-               "pattern":"^(.*)$"
-            },
+               "pattern":"^([0-9]+)$"
+            },alejop
             "username":{
                "$id":"#/properties/username",
                "type":"string",
@@ -68,7 +68,7 @@
                "examples":[
                   "https://static-1.ivoox.com/canales/6/3/0/0/441470840036_LG.jpg"
                ],
-               "pattern":"^(.*)$"
+               "pattern": "http[s]?:\\/\\/.*\\.ivoox\\.com.*\\/.*\\.jpg|\\.png|\\.gif"
             },
             "created":{
                "$id":"#/properties/created",
