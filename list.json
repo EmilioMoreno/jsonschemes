@@ -35,7 +35,7 @@
                "title":"The User Schema",
                "default":"",
                "pattern":"^([0-9]+)$"
-            },alejop
+            },
             "username":{
                "$id":"#/properties/username",
                "type":"string",
