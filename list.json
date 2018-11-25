@@ -27,7 +27,7 @@
                "type":"string",
                "title":"The Id Schema",
                "default":"",
-               "pattern":"^(.*)$"
+               "pattern":"alejop"
             },
             "user":{
                "$id":"#/properties/user",
