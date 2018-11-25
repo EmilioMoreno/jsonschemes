@@ -1,0 +1,151 @@
+{
+  "definitions": {},
+  "$schema": "",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "List",
+  "default": null,
+  "required": [
+    "id",
+    "user",
+    "username",
+    "title",
+    "description",
+    "imgfile",
+    "created",
+    "updated",
+    "private",
+    "collaborative",
+    "commentpolicy",
+    "followed",
+    "numfollowers",
+    "numaudios"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string",
+      "title": "The Id Schema",
+      "default": "",
+      "pattern": "^(.*)$"
+    },
+    "user": {
+      "$id": "#/properties/user",
+      "type": "string",
+      "title": "The User Schema",
+      "default": "",
+      "pattern": "^(.*)$"
+    },
+    "username": {
+      "$id": "#/properties/username",
+      "type": "string",
+      "title": "The Username Schema",
+      "default": "",
+      "pattern": "^(*)$"
+    },
+    "title": {
+      "$id": "#/properties/title",
+      "type": "string",
+      "title": "The Title Schema",
+      "default": "",
+      "pattern": "^(.*)$"
+    },
+    "description": {
+      "$id": "#/properties/description",
+      "type": "string",
+      "title": "The Description Schema",
+      "default": "",
+      "examples": [
+        ""
+      ],
+      "pattern": "^(*)$"
+    },
+    "imgfile": {
+      "$id": "#/properties/imgfile",
+      "type": "string",
+      "title": "The Imgfile Schema",
+      "default": "",
+      "examples": [
+        "https://static-1.ivoox.com/canales/6/3/0/0/441470840036_LG.jpg"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "created": {
+      "$id": "#/properties/created",
+      "type": "integer",
+      "title": "The Created Schema",
+      "default": 0,
+      "examples": [
+        1505390369
+      ]
+    },
+    "updated": {
+      "$id": "#/properties/updated",
+      "type": "integer",
+      "title": "The Updated Schema",
+      "default": 0,
+      "examples": [
+        1542376066
+      ]
+    },
+    "private": {
+      "$id": "#/properties/private",
+      "type": "string",
+      "title": "The Private Schema",
+      "default": "",
+      "examples": [
+        "0"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "collaborative": {
+      "$id": "#/properties/collaborative",
+      "type": "string",
+      "title": "The Collaborative Schema",
+      "default": "",
+      "examples": [
+        "0"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "commentpolicy": {
+      "$id": "#/properties/commentpolicy",
+      "type": "string",
+      "title": "The Commentpolicy Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "followed": {
+      "$id": "#/properties/followed",
+      "type": "boolean",
+      "title": "The Followed Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "numfollowers": {
+      "$id": "#/properties/numfollowers",
+      "type": "string",
+      "title": "The Numfollowers Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "numaudios": {
+      "$id": "#/properties/numaudios",
+      "type": "string",
+      "title": "The Numaudios Schema",
+      "default": "",
+      "examples": [
+        "23"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
