@@ -3,23 +3,8 @@
   "definitions": {
     "imagefile_list": {
       "$id": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/imagefile.json",
-      "type": "object",
-      "title": "The Root Schema",
-      "required": [
-        "imgfile"
-      ],
-      "properties": {
-        "imgfile": {
-          "$id": "#/properties/imgfile",
-          "type": "string",
-          "title": "The Imgfile Schema",
-          "default": "",
-          "examples": [
-            "https://static-1.ivoox.com/canales/2/0/1/8/4791539628102_MD.jpg,https://static-1.ivoox.com/canales/5/6/2/3/4541480603265_MD.jpg,https://static-1.ivoox.com/canales/1/7/5/0/2171518690571_MD.jpg,https://static-1.ivoox.com/audios/3/3/6/8/591519478633_MD.jpg"
-          ],
-          "pattern": "http[s]?:\\/\\/.*\\.ivoox\\.com.*\\/.*\\.jpg|\\.png|\\.gif"
-        }
+      "type": "string",
+      "pattern": "http[s]?:\\/\\/.*\\.ivoox\\.com.*\\/.*\\.jpg|\\.png|\\.gif"
       }
-    }
   }
 }
