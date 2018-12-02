@@ -57,16 +57,7 @@
                "default":""
    
             },
-            "imgfile":{
-               "$id":"#/properties/imgfile",
-               "type":"string",
-               "title":"The Imgfile Schema",
-               "default":"",
-               "examples":[
-                  "https://static-1.ivoox.com/canales/6/3/0/0/441470840036_LG.jpg"
-               ],
-               "pattern": "http[s]?:\\/\\/.*\\.ivoox\\.com.*\\/.*\\.jpg|\\.png|\\.gif"
-            },
+            "imgfile":{ "$ref": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/imagefile.json#/definitions/imagefile_list" },
             "created":{
                "$id":"#/properties/created",
                "type":"integer",
