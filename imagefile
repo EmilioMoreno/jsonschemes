@@ -1,0 +1,22 @@
+{
+ 2   "definitions": {},
+ 3   "$schema": "http://json-schema.org/draft-07/schema#",
+ 4   "$id": "http://example.com/root.json",
+ 5   "type": "object",
+ 6   "title": "The Root Schema",
+ 7   "required": [
+ 8     "imgfile"
+ 9   ],
+10   "properties": {
+11     "imgfile": {
+12       "$id": "#/properties/imgfile",
+13       "type": "string",
+14       "title": "The Imgfile Schema",
+15       "default": "",
+16       "examples": [
+17         "https://static-1.ivoox.com/canales/2/0/1/8/4791539628102_MD.jpg,https://static-1.ivoox.com/canales/5/6/2/3/4541480603265_MD.jpg,https://static-1.ivoox.com/canales/1/7/5/0/2171518690571_MD.jpg,https://static-1.ivoox.com/audios/3/3/6/8/591519478633_MD.jpg"
+18       ],
+19       "pattern": "^(.*)$"
+20     }
+21   }
+22 }
