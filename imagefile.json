@@ -2,7 +2,7 @@
   "definitions": {
     "imagefile_list": {
       "$id": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/imagefile.json",
-      "type": "null",
+      "type": "string",
       "pattern": "http[s]?:\\/\\/.*\\.ivoox\\.com.*\\/.*\\.jpg|\\.png|\\.gif"
       }
   }
