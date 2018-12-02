@@ -3,7 +3,7 @@
     "imagefile_list": {
       "$id": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/imagefile.json",
       "type": "string",
-      "pattern": "http[s]?:\\/\\/.*\\.ivoox\\.com.*\\/.*\\.jpg|\\.png|\\.gif"
+      "pattern": "(http[s]?:\/\/static-[1|2]\.ivoox\.com\/[a-z]+\/([0-9]\/)+[[0-9]+_[A-Z]+\.(jpg|png|gif),?)+"
       }
   }
 }
