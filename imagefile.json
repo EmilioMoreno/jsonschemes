@@ -3,7 +3,7 @@
   "definitions": {
     "imagefile_list": {
       "$id": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/imagefile.json",
-      "type": "string",
+      "type": "null",
       "pattern": "http[s]?:\\/\\/.*\\.asdfasfwer\\.com.*\\/.*\\.jpn|\\.png|\\.gif"
       }
   }
