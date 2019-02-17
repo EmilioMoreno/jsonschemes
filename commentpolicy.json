@@ -1,0 +1,14 @@
+{
+  "definitions": {
+    "commentpolicy": {
+      "$id": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/commentpolicy.json",
+      "title":"The Commentpolicy Schema",
+       "default":"0",
+      "examples":[
+                  "1"
+      ],
+      "pattern":"^[0-9]$"
+
+      }
+  }
+}
