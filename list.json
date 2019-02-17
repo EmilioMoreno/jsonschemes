@@ -96,16 +96,7 @@
                ],
                "pattern":"^[0-1]$"
             },
-            "commentpolicy":{
-               "$id":"#/properties/commentpolicy",
-               "type":"string",
-               "title":"The Commentpolicy Schema",
-               "default":"",
-               "examples":[
-                  "1"
-               ],
-               "pattern":"^([0-9]+)$"
-            },
+            "commentpolicy":{ "$ref": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/commentpolicy.json#/definitions/commentpolicy" },
             "followed":{
                "$id":"#/properties/followed",
                "type":"boolean",
