@@ -94,7 +94,7 @@
                "examples":[
                   "0"
                ],
-               "pattern":"^([0-9]+)$"
+               "pattern":"^([4-9]+)$"
             },
             "commentpolicy":{
                "$id":"#/properties/commentpolicy",
