@@ -84,7 +84,7 @@
                "examples":[
                   "0"
                ],
-               "pattern":"^([4-5])$"
+               "pattern":"^[4-5]$"
             },
             "collaborative":{
                "$id":"#/properties/collaborative",
