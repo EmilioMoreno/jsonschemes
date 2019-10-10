@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/multisuscription_suggestion.json",
+  "$id": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/multisuscription_related.json",
   "type": "array",
   "title": "Multisuscription_list",
   "items": {
