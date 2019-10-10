@@ -64,16 +64,7 @@
               "dfdsf"
                   ]
           },
-          "image": {
-            "$id": "#/items/properties/podcast/properties/image",
-            "type": "string",
-            "title": "The Image Schema",
-            "default": "",
-            "examples": [
-              "https://static-2.ivoox.com/canales/5/1/1/3/8081470843115_MD.jpg"
-            ],
-            "pattern": "^(.*)$"
-          },
+          "img":{ "$ref": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/imagefile.json#/definitions/imagefile_list" },
           "imagemd": {
             "$id": "#/items/properties/podcast/properties/imagemd",
             "type": "string",
