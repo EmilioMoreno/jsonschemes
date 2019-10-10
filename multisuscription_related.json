@@ -44,7 +44,7 @@
             "examples": [
               "45110"
             ],
-            "pattern": "^a[0-9]+$"
+            "pattern": "^[0-9]+$"
           },
           "username": {
             "$id": "#/items/properties/podcast/properties/username",
