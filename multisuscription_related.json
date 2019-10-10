@@ -62,8 +62,7 @@
             "default": "",
             "examples": [
               "dfdsf"
-                  ],
-            "pattern": "^(.*)$"
+                  ]
           },
           "image": {
             "$id": "#/items/properties/podcast/properties/image",
