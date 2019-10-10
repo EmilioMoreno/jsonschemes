@@ -85,7 +85,7 @@
             "examples": [
               "408"
             ],
-            "pattern": "^(.*)$"
+            "pattern": "^[0-9]+$"
           },
           "ranking": {
             "$id": "#/items/properties/podcast/properties/ranking",
@@ -95,7 +95,7 @@
             "examples": [
               "194"
             ],
-            "pattern": "^(.*)$"
+            "pattern": "^[0-9]+$"
           },
           "lastupdatetext": {
             "$id": "#/items/properties/podcast/properties/lastupdatetext",
@@ -115,7 +115,7 @@
             "examples": [
               "24/03/2015"
             ],
-            "pattern": "^(.*)$"
+            "pattern": "^[0-3][0-9]/[0-1][0-9]/[1-2][0-9][0-9][0-9]$"
           },
           "lastupdatetimestamp": {
             "$id": "#/items/properties/podcast/properties/lastupdatetimestamp",
