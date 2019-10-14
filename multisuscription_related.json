@@ -134,7 +134,7 @@
             "examples": [
               "135"
             ],
-            "pattern": "^(.*)$"
+            "pattern": "^[0-9]+$"
           },
           "numsuscriptions": {
             "$id": "#/items/properties/podcast/properties/numsuscriptions",
@@ -144,7 +144,7 @@
             "examples": [
               "4146"
             ],
-            "pattern": "^(.*)$"
+            "pattern": "^[0-9]+"
           },
           "paid": {
             "$id": "#/items/properties/podcast/properties/paid",
