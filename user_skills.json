@@ -1,0 +1,214 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/user_skills.json",
+  "type": "object",
+  "title": "User Skills",
+  "description": "Requered skills for app",
+  "definitions": {
+    "user_skills": {
+      "default": {},
+      "required": [
+        "skills"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "skills": {
+          "$id": "#/properties/skills",
+          "type": "object",
+          "title": "The skills schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "adsfree": false,
+              "skill_fansfree": false,
+              "skill_feed_to_itunes": false,
+              "skill_hide_audios": false,
+              "skill_hide_stats": false,
+              "skill_over_two_hours": false,
+              "producerpro": false,
+              "skill_revenueshare": false,
+              "skill_scheduled_publish": false,
+              "skill_select_rss_lenght": false,
+              "skill_visibility": false,
+              "skill_boost_volume": false,
+              "skill_sync_devices": false,
+              "skill_car_mode": false,
+              "skill_unlimited_smartlists": false
+            }
+          ],
+          "required": [
+            "adsfree",
+            "skill_fansfree",
+            "skill_feed_to_itunes",
+            "skill_hide_audios",
+            "skill_hide_stats",
+            "skill_over_two_hours",
+            "producerpro",
+            "skill_revenueshare",
+            "skill_scheduled_publish",
+            "skill_select_rss_lenght",
+            "skill_visibility",
+            "skill_boost_volume",
+            "skill_sync_devices",
+            "skill_car_mode",
+            "skill_unlimited_smartlists"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "adsfree": {
+              "$id": "#/properties/skills/properties/adsfree",
+              "type": "boolean",
+              "title": "The adsfree schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_fansfree": {
+              "$id": "#/properties/skills/properties/skill_fansfree",
+              "type": "boolean",
+              "title": "The skill_fansfree schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_feed_to_itunes": {
+              "$id": "#/properties/skills/properties/skill_feed_to_itunes",
+              "type": "boolean",
+              "title": "The skill_feed_to_itunes schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_hide_audios": {
+              "$id": "#/properties/skills/properties/skill_hide_audios",
+              "type": "boolean",
+              "title": "The skill_hide_audios schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_hide_stats": {
+              "$id": "#/properties/skills/properties/skill_hide_stats",
+              "type": "boolean",
+              "title": "The skill_hide_stats schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_over_two_hours": {
+              "$id": "#/properties/skills/properties/skill_over_two_hours",
+              "type": "boolean",
+              "title": "The skill_over_two_hours schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "producerpro": {
+              "$id": "#/properties/skills/properties/producerpro",
+              "type": "boolean",
+              "title": "The producerpro schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_revenueshare": {
+              "$id": "#/properties/skills/properties/skill_revenueshare",
+              "type": "boolean",
+              "title": "The skill_revenueshare schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_scheduled_publish": {
+              "$id": "#/properties/skills/properties/skill_scheduled_publish",
+              "type": "boolean",
+              "title": "The skill_scheduled_publish schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_select_rss_lenght": {
+              "$id": "#/properties/skills/properties/skill_select_rss_lenght",
+              "type": "boolean",
+              "title": "The skill_select_rss_lenght schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_visibility": {
+              "$id": "#/properties/skills/properties/skill_visibility",
+              "type": "boolean",
+              "title": "The skill_visibility schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_boost_volume": {
+              "$id": "#/properties/skills/properties/skill_boost_volume",
+              "type": "boolean",
+              "title": "The skill_boost_volume schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_sync_devices": {
+              "$id": "#/properties/skills/properties/skill_sync_devices",
+              "type": "boolean",
+              "title": "The skill_sync_devices schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_car_mode": {
+              "$id": "#/properties/skills/properties/skill_car_mode",
+              "type": "boolean",
+              "title": "The skill_car_mode schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "skill_unlimited_smartlists": {
+              "$id": "#/properties/skills/properties/skill_unlimited_smartlists",
+              "type": "boolean",
+              "title": "The skill_unlimited_smartlists schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                false
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

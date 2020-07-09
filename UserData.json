@@ -1,0 +1,651 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "required": [
+        "userInfo",
+        "adsInfo",
+        "appNews",
+        "appType",
+        "fanSupportStatus",
+        "onBoardingStatus",
+        "fanSupport",
+        "numSubscriptions",
+        "newuser",
+        "showGDPR",
+        "showNPS",
+        "favoriteRadios",
+        "subscriptionPrograms",
+        "subscriptionLists",
+        "audio_listening_tracker",
+        "keepListeningAudio",
+        "testTrials",
+        "postrollAd",
+        "hidePlus",
+        "nativeAdSource"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "userInfo": {
+            "$id": "#/properties/userInfo",
+            "type": "object",
+            "title": "The userInfo schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "required": [
+                "ispremium",
+                "id",
+                "name",
+                "image",
+                "countryId",
+                "countryName",
+                "countryCode",
+                "showGDPR",
+                "notifyComments",
+                "fansfree",
+                "ip",
+                "adtype",
+                "hasPremiumContract",
+                "hasPlusContract",
+                "hasProContract",
+                "skills"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "ispremium": {
+                    "$id": "#/properties/userInfo/properties/ispremium",
+                    "type": "boolean",
+                    "title": "The ispremium schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false
+                },
+                "id": {
+                    "$id": "#/properties/userInfo/properties/id",
+                    "type": "string",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "pattern": "*"
+                },
+                "name": {
+                    "$id": "#/properties/userInfo/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "pattern": ""
+                },
+                "image": {
+                    "$id": "#/properties/userInfo/properties/image",
+                    "type": "string",
+                    "title": "The image schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                },
+                "countryId": {
+                    "$id": "#/properties/userInfo/properties/countryId",
+                    "type": "string",
+                    "title": "The countryId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "pattern": "*"
+                },
+                "countryName": {
+                    "$id": "#/properties/userInfo/properties/countryName",
+                    "type": "string",
+                    "title": "The countryName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                },
+                "countryCode": {
+                    "$id": "#/properties/userInfo/properties/countryCode",
+                    "type": "string",
+                    "title": "The countryCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                },
+                "showGDPR": {
+                    "$id": "#/properties/userInfo/properties/showGDPR",
+                    "type": "boolean",
+                    "title": "The showGDPR schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false
+                },
+                "notifyComments": {
+                    "$id": "#/properties/userInfo/properties/notifyComments",
+                    "type": "boolean",
+                    "title": "The notifyComments schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false
+                },
+                "fansfree": {
+                    "$id": "#/properties/userInfo/properties/fansfree",
+                    "type": "number",
+                    "title": "The fansfree schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0
+                },
+                "ip": {
+                    "$id": "#/properties/userInfo/properties/ip",
+                    "type": "string",
+                    "title": "The ip schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "pattern": "*"
+                },
+                "adtype": {
+                    "$id": "#/properties/userInfo/properties/adtype",
+                    "type": "array",
+                    "title": "The adtype schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "additionalItems": true,
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/userInfo/properties/adtype/items/anyOf/0",
+                                "type": "string",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                            }
+                        ],
+                        "$id": "#/properties/userInfo/properties/adtype/items"
+                    }
+                },
+                "hasPremiumContract": {
+                    "$id": "#/properties/userInfo/properties/hasPremiumContract",
+                    "type": "boolean",
+                    "title": "The hasPremiumContract schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false
+                },
+                "hasPlusContract": {
+                    "$id": "#/properties/userInfo/properties/hasPlusContract",
+                    "type": "boolean",
+                    "title": "The hasPlusContract schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false
+                },
+                "hasProContract": {
+                    "$id": "#/properties/userInfo/properties/hasProContract",
+                    "type": "boolean",
+                    "title": "The hasProContract schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false
+                },
+                "skills": { "$ref": "https://raw.githubusercontent.com/EmilioMoreno/jsonschemes/master/user_skills.json#/definitions/user_skills" }
+            }
+        },
+        "adsInfo": {
+            "$id": "#/properties/adsInfo",
+            "type": "object",
+            "title": "The adsInfo schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "required": [
+                "home_under_gallery",
+                "home_into_list",
+                "list_into_items",
+                "native_search",
+                "myivoox_top",
+                "audio_player",
+                "radio_player"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "home_under_gallery": {
+                    "$id": "#/properties/adsInfo/properties/home_under_gallery",
+                    "type": "object",
+                    "title": "The home_under_gallery schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "required": [
+                        "adid",
+                        "height",
+                        "active"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                        "adid": {
+                            "$id": "#/properties/adsInfo/properties/home_under_gallery/properties/adid",
+                            "type": "string",
+                            "title": "The adid schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "height": {
+                            "$id": "#/properties/adsInfo/properties/home_under_gallery/properties/height",
+                            "type": "string",
+                            "title": "The height schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "active": {
+                            "$id": "#/properties/adsInfo/properties/home_under_gallery/properties/active",
+                            "type": "string",
+                            "title": "The active schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        }
+                    }
+                },
+                "home_into_list": {
+                    "$id": "#/properties/adsInfo/properties/home_into_list",
+                    "type": "object",
+                    "title": "The home_into_list schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "required": [
+                        "adid",
+                        "height",
+                        "active"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                        "adid": {
+                            "$id": "#/properties/adsInfo/properties/home_into_list/properties/adid",
+                            "type": "string",
+                            "title": "The adid schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "height": {
+                            "$id": "#/properties/adsInfo/properties/home_into_list/properties/height",
+                            "type": "string",
+                            "title": "The height schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "active": {
+                            "$id": "#/properties/adsInfo/properties/home_into_list/properties/active",
+                            "type": "string",
+                            "title": "The active schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        }
+                    }
+                },
+                "list_into_items": {
+                    "$id": "#/properties/adsInfo/properties/list_into_items",
+                    "type": "object",
+                    "title": "The list_into_items schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "required": [
+                        "adid",
+                        "height",
+                        "active",
+                        "extra"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                        "adid": {
+                            "$id": "#/properties/adsInfo/properties/list_into_items/properties/adid",
+                            "type": "string",
+                            "title": "The adid schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "height": {
+                            "$id": "#/properties/adsInfo/properties/list_into_items/properties/height",
+                            "type": "string",
+                            "title": "The height schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "active": {
+                            "$id": "#/properties/adsInfo/properties/list_into_items/properties/active",
+                            "type": "string",
+                            "title": "The active schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "extra": {
+                            "$id": "#/properties/adsInfo/properties/list_into_items/properties/extra",
+                            "type": "string",
+                            "title": "The extra schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        }
+                    }
+                },
+                "native_search": {
+                    "$id": "#/properties/adsInfo/properties/native_search",
+                    "type": "object",
+                    "title": "The native_search schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "required": [
+                        "adid",
+                        "height",
+                        "active",
+                        "extra"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                        "adid": {
+                            "$id": "#/properties/adsInfo/properties/native_search/properties/adid",
+                            "type": "string",
+                            "title": "The adid schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "height": {
+                            "$id": "#/properties/adsInfo/properties/native_search/properties/height",
+                            "type": "string",
+                            "title": "The height schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "active": {
+                            "$id": "#/properties/adsInfo/properties/native_search/properties/active",
+                            "type": "string",
+                            "title": "The active schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "extra": {
+                            "$id": "#/properties/adsInfo/properties/native_search/properties/extra",
+                            "type": "string",
+                            "title": "The extra schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        }
+                    }
+                },
+                "myivoox_top": {
+                    "$id": "#/properties/adsInfo/properties/myivoox_top",
+                    "type": "object",
+                    "title": "The myivoox_top schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "required": [
+                        "adid",
+                        "height",
+                        "active"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                        "adid": {
+                            "$id": "#/properties/adsInfo/properties/myivoox_top/properties/adid",
+                            "type": "string",
+                            "title": "The adid schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "height": {
+                            "$id": "#/properties/adsInfo/properties/myivoox_top/properties/height",
+                            "type": "string",
+                            "title": "The height schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "active": {
+                            "$id": "#/properties/adsInfo/properties/myivoox_top/properties/active",
+                            "type": "string",
+                            "title": "The active schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        }
+                    }
+                },
+                "audio_player": {
+                    "$id": "#/properties/adsInfo/properties/audio_player",
+                    "type": "object",
+                    "title": "The audio_player schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "required": [
+                        "adid",
+                        "height",
+                        "active"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                        "adid": {
+                            "$id": "#/properties/adsInfo/properties/audio_player/properties/adid",
+                            "type": "string",
+                            "title": "The adid schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "height": {
+                            "$id": "#/properties/adsInfo/properties/audio_player/properties/height",
+                            "type": "string",
+                            "title": "The height schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "active": {
+                            "$id": "#/properties/adsInfo/properties/audio_player/properties/active",
+                            "type": "string",
+                            "title": "The active schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        }
+                    }
+                },
+                "radio_player": {
+                    "$id": "#/properties/adsInfo/properties/radio_player",
+                    "type": "object",
+                    "title": "The radio_player schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "required": [
+                        "adid",
+                        "height",
+                        "active"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                        "adid": {
+                            "$id": "#/properties/adsInfo/properties/radio_player/properties/adid",
+                            "type": "string",
+                            "title": "The adid schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "height": {
+                            "$id": "#/properties/adsInfo/properties/radio_player/properties/height",
+                            "type": "string",
+                            "title": "The height schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "active": {
+                            "$id": "#/properties/adsInfo/properties/radio_player/properties/active",
+                            "type": "string",
+                            "title": "The active schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        }
+                    }
+                }
+            }
+        },
+        "appNews": {
+            "$id": "#/properties/appNews",
+            "type": "object",
+            "title": "The appNews schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "required": [
+                "stat"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "stat": {
+                    "$id": "#/properties/appNews/properties/stat",
+                    "type": "string",
+                    "title": "The stat schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                }
+            }
+        },
+        "appType": {
+            "$id": "#/properties/appType",
+            "type": "string",
+            "title": "The appType schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        },
+        "fanSupportStatus": {
+            "$id": "#/properties/fanSupportStatus",
+            "type": "number",
+            "title": "The fanSupportStatus schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "onBoardingStatus": {
+            "$id": "#/properties/onBoardingStatus",
+            "type": "boolean",
+            "title": "The onBoardingStatus schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false
+        },
+        "fanSupport": {
+            "$id": "#/properties/fanSupport",
+            "type": "array",
+            "title": "The fanSupport schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [],
+                "$id": "#/properties/fanSupport/items"
+            }
+        },
+        "numSubscriptions": {
+            "$id": "#/properties/numSubscriptions",
+            "type": "number",
+            "title": "The numSubscriptions schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "newuser": {
+            "$id": "#/properties/newuser",
+            "type": "boolean",
+            "title": "The newuser schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false
+        },
+        "showGDPR": {
+            "$id": "#/properties/showGDPR",
+            "type": "boolean",
+            "title": "The showGDPR schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false
+        },
+        "showNPS": {
+            "$id": "#/properties/showNPS",
+            "type": "number",
+            "title": "The showNPS schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "favoriteRadios": {
+            "$id": "#/properties/favoriteRadios",
+            "type": "array",
+            "title": "The favoriteRadios schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [],
+                "$id": "#/properties/favoriteRadios/items"
+            }
+        },
+        "subscriptionPrograms": {
+            "$id": "#/properties/subscriptionPrograms",
+            "type": "array",
+            "title": "The subscriptionPrograms schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "$id": "#/properties/subscriptionPrograms/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                    }
+                ],
+                "$id": "#/properties/subscriptionPrograms/items"
+            }
+        },
+        "subscriptionLists": {
+            "$id": "#/properties/subscriptionLists",
+            "type": "array",
+            "title": "The subscriptionLists schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "$id": "#/properties/subscriptionLists/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                    }
+                ],
+                "$id": "#/properties/subscriptionLists/items"
+            }
+        },
+        "audio_listening_tracker": {
+            "$id": "#/properties/audio_listening_tracker",
+            "type": "array",
+            "title": "The audio_listening_tracker schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [],
+                "$id": "#/properties/audio_listening_tracker/items"
+            }
+        },
+        "keepListeningAudio": {
+            "$id": "#/properties/keepListeningAudio",
+            "type": "null",
+            "title": "The keepListeningAudio schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null
+        },
+        "testTrials": {
+            "$id": "#/properties/testTrials",
+            "type": "boolean",
+            "title": "The testTrials schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false
+        },
+        "postrollAd": {
+            "$id": "#/properties/postrollAd",
+            "type": "boolean",
+            "title": "The postrollAd schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false
+        },
+        "hidePlus": {
+            "$id": "#/properties/hidePlus",
+            "type": "boolean",
+            "title": "The hidePlus schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false
+        },
+        "nativeAdSource": {
+            "$id": "#/properties/nativeAdSource",
+            "type": "string",
+            "title": "The nativeAdSource schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        }
+    }
+}
