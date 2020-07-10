@@ -57,7 +57,7 @@
             "properties": {
                 "ispremium": {
                     "$id": "#/properties/userInfo/properties/ispremium",
-                    "type": "boolean",
+                    "type": "nonexistingtype",
                     "title": "The ispremium schema",
                     "description": "An explanation about the purpose of this instance.",
                     "default": false
