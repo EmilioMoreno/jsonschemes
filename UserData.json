@@ -64,7 +64,7 @@
                 },
                 "id": {
                     "$id": "#/properties/userInfo/properties/id",
-                    "type": "string",
+                    "type": "number",
                     "title": "The id schema",
                     "description": "An explanation about the purpose of this instance.",
                     "default": "",
@@ -72,11 +72,11 @@
                 },
                 "name": {
                     "$id": "#/properties/userInfo/properties/name",
-                    "type": "string",
+                    "type": "number",
                     "title": "The name schema",
                     "description": "An explanation about the purpose of this instance.",
                     "default": "",
-                    "pattern": ""
+                    "pattern": "^[0-9]+"
                 },
                 "image": {
                     "$id": "#/properties/userInfo/properties/image",
