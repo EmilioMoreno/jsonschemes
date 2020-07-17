@@ -4,120 +4,6 @@
     "type": "object",
     "title": "The root schema",
     "description": "The root schema comprises the entire JSON document.",
-    "default": {},
-    "examples": [
-        {
-            "userInfo": {
-                "ispremium": false,
-                "id": "21322239",
-                "name": "Emilio Moreno Gomez",
-                "image": "http://static-1.ivoox.com/usuarios/misc.avatar_mujer_MD.jpg",
-                "countryId": "1",
-                "countryName": "España",
-                "countryCode": "ES",
-                "showGDPR": false,
-                "notifyComments": true,
-                "fansfree": 0,
-                "ip": "10.9.0.190",
-                "adtype": [
-                    "AUDIO",
-                    "DISPLAY"
-                ],
-                "hasPremiumContract": false,
-                "hasPlusContract": false,
-                "hasProContract": false,
-                "skills": {
-                    "adsfree": false,
-                    "skill_fansfree": false,
-                    "skill_feed_to_itunes": false,
-                    "skill_hide_audios": false,
-                    "skill_hide_stats": false,
-                    "skill_over_two_hours": false,
-                    "producerpro": false,
-                    "skill_revenueshare": false,
-                    "skill_scheduled_publish": false,
-                    "skill_select_rss_lenght": false,
-                    "skill_visibility": false,
-                    "skill_boost_volume": false,
-                    "skill_sync_devices": false,
-                    "skill_car_mode": false,
-                    "skill_unlimited_smartlists": false
-                }
-            },
-            "adsInfo": {
-                "home_under_gallery": {
-                    "adid": "/1019149/app_home_under_gallery",
-                    "height": "50",
-                    "active": "0"
-                },
-                "home_into_list": {
-                    "adid": "/1019149/app_home_into_list",
-                    "height": "50",
-                    "active": "1"
-                },
-                "list_into_items": {
-                    "adid": "/1019149/app_list_into_items",
-                    "height": "50",
-                    "active": "1",
-                    "extra": "1"
-                },
-                "native_search": {
-                    "adid": "/1019149/app_list_into_items",
-                    "height": "50",
-                    "active": "1",
-                    "extra": "1"
-                },
-                "myivoox_top": {
-                    "adid": "/1019149/app_myivoox_top",
-                    "height": "50",
-                    "active": "0"
-                },
-                "audio_player": {
-                    "adid": "/1019149/app_player_300x250",
-                    "height": "250",
-                    "active": "1"
-                },
-                "radio_player": {
-                    "adid": "/1019149/app_radio_player",
-                    "height": "250",
-                    "active": "1"
-                }
-            },
-            "appNews": {
-                "stat": "no platform"
-            },
-            "appType": "STANDARD",
-            "fanSupportStatus": 1,
-            "onBoardingStatus": true,
-            "fanSupport": [],
-            "numSubscriptions": 195,
-            "newuser": false,
-            "showGDPR": false,
-            "showNPS": 1,
-            "favoriteRadios": [],
-            "subscriptionPrograms": [
-                "629090",
-                "506698",
-                "851313",
-                "619",
-                "267769",
-                "653841",
-                "273",
-                "311866",
-                "17459",
-                "17447"
-            ],
-            "subscriptionLists": [
-                "438878"
-            ],
-            "audio_listening_tracker": [],
-            "keepListeningAudio": null,
-            "testTrials": false,
-            "postrollAd": true,
-            "hidePlus": true,
-            "nativeAdSource": "fan"
-        }
-    ],
     "required": [
         "userInfo",
         "adsInfo",
@@ -147,46 +33,6 @@
             "type": "object",
             "title": "The userInfo schema",
             "description": "An explanation about the purpose of this instance.",
-            "default": {},
-            "examples": [
-                {
-                    "ispremium": false,
-                    "id": "21322239",
-                    "name": "Emilio Moreno Gomez",
-                    "image": "http://static-1.ivoox.com/usuarios/misc.avatar_mujer_MD.jpg",
-                    "countryId": "1",
-                    "countryName": "España",
-                    "countryCode": "ES",
-                    "showGDPR": false,
-                    "notifyComments": true,
-                    "fansfree": 0,
-                    "ip": "10.9.0.190",
-                    "adtype": [
-                        "AUDIO",
-                        "DISPLAY"
-                    ],
-                    "hasPremiumContract": false,
-                    "hasPlusContract": false,
-                    "hasProContract": false,
-                    "skills": {
-                        "adsfree": false,
-                        "skill_fansfree": false,
-                        "skill_feed_to_itunes": false,
-                        "skill_hide_audios": false,
-                        "skill_hide_stats": false,
-                        "skill_over_two_hours": false,
-                        "producerpro": false,
-                        "skill_revenueshare": false,
-                        "skill_scheduled_publish": false,
-                        "skill_select_rss_lenght": false,
-                        "skill_visibility": false,
-                        "skill_boost_volume": false,
-                        "skill_sync_devices": false,
-                        "skill_car_mode": false,
-                        "skill_unlimited_smartlists": false
-                    }
-                }
-            ],
             "required": [
                 "ispremium",
                 "id",
@@ -222,7 +68,6 @@
                     "type": "string",
                     "title": "The id schema",
                     "description": "An explanation about the purpose of this instance.",
-                    "default": "",
                     "examples": [
                         "21322239"
                     ]
@@ -232,10 +77,6 @@
                     "type": "string",
                     "title": "The name schema",
                     "description": "An explanation about the purpose of this instance.",
-                    "default": "",
-                    "examples": [
-                        "Emilio Moreno Gomez"
-                    ]
                 },
                 "image": {
                     "id": "#/properties/userInfo/properties/image",
@@ -282,20 +123,12 @@
                     "type": "number",
                     "title": "The showGDPR schema",
                     "description": "An explanation about the purpose of this instance.",
-                    "default": false,
-                    "examples": [
-                        false
-                    ]
                 },
                 "notifyComments": {
                     "id": "#/properties/userInfo/properties/notifyComments",
                     "type": "boolean",
                     "title": "The notifyComments schema",
                     "description": "An explanation about the purpose of this instance.",
-                    "default": false,
-                    "examples": [
-                        true
-                    ]
                 },
                 "fansfree": {
                     "id": "#/properties/userInfo/properties/fansfree",
@@ -312,10 +145,6 @@
                     "type": "string",
                     "title": "The ip schema",
                     "description": "An explanation about the purpose of this instance.",
-                    "default": "",
-                    "examples": [
-                        "10.9.0.190"
-                    ]
                 },
                 "adtype": {
                     "id": "#/properties/userInfo/properties/adtype",
@@ -323,11 +152,6 @@
                     "title": "The adtype schema",
                     "description": "An explanation about the purpose of this instance.",
                     "default": [],
-                    "examples": [
-                        [
-                            "AUDIO",
-                            "DISPLAY"
-                        ]
                     ],
                     "additionalItems": true,
                     "items": {
