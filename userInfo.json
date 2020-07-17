@@ -58,10 +58,7 @@
                     "type": "boolean",
                     "title": "The ispremium schema",
                     "description": "An explanation about the purpose of this instance.",
-                    "default": false,
-                    "examples": [
-                        false
-                    ]
+                    "pattern": "^[0-9]+$"
                 },
                 "id": {
                     "id": "#/properties/userInfo/properties/id",
